@@ -1,9 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-</head>
-<body>
-    <h2>OLÁ MUNDO<h2>
-</body>
-</html>
+   {% extends 'base.html' %}
+   
+   {% block conteudo %}
+   <h2>OLÁ {{ nome }}<h2>
+    <p>
+        Profissão: {{dados.profissao}}<br/>
+        Canal YT: {{dados.canal}}
+    </p>
+    {% endblock %}
+    
